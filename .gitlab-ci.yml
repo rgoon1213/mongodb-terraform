@@ -1,0 +1,13 @@
+variables:
+  config_level: ENVs
+
+stages: 
+  - int
+
+MongoDBInstance-int:
+  stage: int
+  variables:
+    env: int
+  image: $CI_REGISTRY/lvcd/gitlabci-log-streamer
+  script:
+     - /gitlab-job-streaming.sh

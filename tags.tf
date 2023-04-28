@@ -5,4 +5,5 @@
 
 module "required_tags" {
   
-]
+
+}
